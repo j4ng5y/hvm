@@ -1,0 +1,7 @@
+# Added by goreleaser init:
+dist/
+
+# Config files
+config.yaml 
+config.yml
+config.conf
