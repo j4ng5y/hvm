@@ -17,6 +17,12 @@ builds:
     ldflags:
       - -s -w -X github.com/j4ng5y/hvm/cmd.Version={{.Version}}
 
+dockers:
+  - image_templates:
+      - "ghcr.io/j4ng5y/hvm:{{ .Version }}"
+      - "ghcr.io/j4ng5y/hvm:latest"
+    dockerfile: Containerfile
+
 archives:
   - formats:
       - tar.gz
